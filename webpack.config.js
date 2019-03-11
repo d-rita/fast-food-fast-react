@@ -18,7 +18,19 @@ module.exports = {
       {
         test: /\.less$/,
         loaders: ['style-loader', 'css-loader', 'less-loader']
-      }
+      },
+      {
+        test: /\.css$/,
+        loaders: [
+          'style-loader', 'css-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader', 'css-loader', 'sass-loader',
+        ],
+      },
     ]
   },
   plugins: [
