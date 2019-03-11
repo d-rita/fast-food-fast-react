@@ -25,5 +25,8 @@ module.exports = {
     new HWP(
       { template: './src/index.html' }
     )
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true
+  }
 };
