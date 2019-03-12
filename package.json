@@ -9,7 +9,10 @@
     "test:coverage": "jest --collectCoverage",
     "start": "webpack-dev-server --open --mode development --hot --https",
     "build": "webpack --mode production --open --hot",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lint:fix": "eslint . --fix",
+    "heroku-prebuild": "npm install yarn && yarn install ",
+    "heroku-postbuild": "yarn run build"
   },
   "repository": {
     "type": "git",
