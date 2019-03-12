@@ -1,7 +1,8 @@
-export const TEST_ACTION = 'TEST_ACTION';
+const ActionTypes = {
+  REGISTER_SUCCESS: 'USER_REGISTER_SUCCESS',
+  REGISTER_FAIL: 'USER_REGISTER_FAIL',
+  LOGIN_SUCCESS: 'LOGIN_SUCCESS',
+  OGIN_FAIL: 'LOGIN_FAIL'
+};
 
-export function testAction() {
-  return {
-    type: TEST_ACTION,
-  };
-}
+export default ActionTypes;

@@ -1,8 +1,89 @@
-div {
-  background-color: aqua;
-  margin: 0 auto;
+* {
+  font-family: Georgia, serif;
+  font-size: 100%;
+  text-decoration: none;
 }
- 
+
+fieldset{
+  width: 300px;
+  border: 5px;
+  padding: 5px; 
+  height: 600px;
+}
+
+.login-link{
+  color: #e68a00;
+}
+
+.signup-img{
+  height: 600px;
+  width: 750px;
+}
+
+.btn-primary{
+  width: 100%;
+  color: #000000 ;
+  background-color: #e68a00 !important;
+  border-color: #e68a00 !important;
+  font-family: Georgia, serif;
+}
+
+// .login-div{
+//   background-color: #fff7a3;
+// }
+
+.head-nav{
+  background-color:  #e68a00 !important;
+}
+
+.navbar-brand{
+  font-size: 35px !important;
+  font-family: Georgia, serif;
+  color: #000000;
+  font-weight: 700;
+  width: 60%;
+  margin: 5px auto;
+}
+
+.btn{
+  border-radius: 10px !important;
+  font-family: Georgia, serif;
+}
+
+.legend{
+  margin-top: 30px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+.fa{
+  color:  #e68a00 !important;
+}
+
+.input-group-text{
+  background-color: #ffffff !important;
+  border-right: none !important;
+  margin-top: 10px;
+}
+
+.form-control{
+  border-left: none !important;
+  margin-top: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=checkbox]{
+  font-family: Georgia, serif;
+}
+
 p{
-  color: white;
+  font-family: Georgia, serif;
+}
+
+footer{
+  background-color: #e3e3e3;
+  color: #000000 !important;
+  padding: 12px 0 30px 0;
 }
