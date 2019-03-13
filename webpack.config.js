@@ -1,6 +1,8 @@
 const path = require('path');
 const HWP = require('html-webpack-plugin');
 
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
   entry: ['./src/index.js'],
   output: {
@@ -36,7 +38,11 @@ module.exports = {
   plugins: [
     new HWP(
       { template: './src/index.html' }
-    )
+    ),
+    new Dotenv({
+      path: path.resolve(__dirname, '.env'),
+      systemvars: true,
+    })
   ],
   devServer: {
     historyApiFallback: true
