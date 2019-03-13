@@ -39,6 +39,40 @@ describe('authReducer', () => {
     expect(authReducer(initialState, failAction)).toEqual(failState);
   });
 
+  it('should handle LOGIN_SUCCESS', () => {
+    const successAction = {
+      type: ActionTypes.LOGIN_SUCCESS,
+      payload: {
+        message: 'Logged in as client',
+        token: '123456'
+      },
+    };
+
+    const successState = {
+      isSuccessful: true,
+      token: '123456',
+      error: '',
+      message: 'Logged in as client'
+    };
+
+    expect(authReducer(initialState, successAction)).toEqual(successState);
+  });
+
+  it('should handle LOGIN_FAIL', () => {
+    const successAction = {
+      type: ActionTypes.LOGIN_FAIL,
+      payload: 'User must sign up before logging in',
+    };
+
+    const successState = {
+      isSuccessful: false,
+      token: '',
+      error: 'User must sign up before logging in',
+    };
+
+    expect(authReducer(initialState, successAction)).toEqual(successState);
+  });
+
   it('should return the initial state', () => {
     const undefinedAction = {
       type: '',

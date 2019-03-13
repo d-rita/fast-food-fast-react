@@ -21,6 +21,7 @@
     "react/jsx-filename-extension": "off",
     "react/prop-types": "off",
     "comma-dangle": "off",
-    "no-undef":"off"
+    "no-undef":"off",
+    "prefer-destructuring": "off"
   }
 }
