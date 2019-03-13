@@ -21,6 +21,20 @@ const authReducer = (state = initialState, action) => {
         isSuccessful: false,
         error: action.payload
       };
+    case ActionTypes.LOGIN_SUCCESS: {
+      return {
+        ...state,
+        isSuccessful: true,
+        message: action.payload.message,
+        token: action.payload.token
+      };
+    }
+    case ActionTypes.LOGIN_FAIL:
+      return {
+        ...state,
+        isSuccessful: false,
+        error: action.payload
+      };
     default:
       return state;
   }
