@@ -2,3 +2,5 @@ exclude_patterns:
 - "__tests__"
 - "__tests__/"
 - "/__tests__/"
+- "**/*.test.js"
+- "**/__tests__"
