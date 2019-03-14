@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --collectCoverage",
-    "start": "webpack-dev-server --open --mode development --hot --https",
+    "start": "webpack-dev-server --open --mode development --hot",
     "build": "webpack --mode production --open --hot",
     "lint": "eslint src",
     "lint:fix": "eslint . --fix",

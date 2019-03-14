@@ -7,7 +7,7 @@ import Loader from '../Loader';
 const Login = props => (
   <div className="container-fluid">
     <div className="row">
-      <div className="col-6">
+      <div className="col-sm-6">
         <img className="signup-img" alt="welcome burger" src="https://res.cloudinary.com/dianarita/image/upload/v1552405188/fastfoodfast/subway.jpg" />
       </div>
       <div className="col-6 d-flex justify-content-center  login-div">

@@ -28,12 +28,29 @@ fieldset{
   font-family: Georgia, serif;
 }
 
-// .login-div{
-//   background-color: #fff7a3;
-// }
 
 .head-nav{
   background-color:  #e68a00 !important;
+}
+
+.user-nav{
+  background-color: #ffffff !important;
+  padding: 10px;
+}
+
+.login-btn{
+  background-color: #e68a00;
+  color:  #000000;
+  border: 1px solid #ffffff;
+  border-radius: 50px
+}
+
+.addButton{
+  color: #000000 ;
+  background-color: #e68a00 !important;
+  border-color: #e68a00 !important;
+  border-radius: 50px;
+  outline-color: none;
 }
 
 .navbar-brand{
@@ -45,9 +62,35 @@ fieldset{
   margin: 5px auto;
 }
 
+ul{
+ margin-left: 35%
+};
+
+ul li{
+  display: inline-block !important;
+  list-style: none;
+  padding: 15px 30px;
+  // background-color: #e3e3e3;
+}
+
+ul li:hover{
+  background-color: #e68a00;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn{
   border-radius: 10px !important;
   font-family: Georgia, serif;
+  outline-color: none;
 }
 
 .legend{

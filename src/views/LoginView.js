@@ -29,7 +29,7 @@ export class LoginView extends Component {
       window.location.assign('/admin', 200);
     } else if (nextProps.message === 'Logged in as client') {
       localStorage.setItem('token', nextProps.token);
-      window.location.assign('/user_dashboard', 200);
+      window.location.assign('/home', 200);
     }
   }
 
